@@ -22,6 +22,7 @@
     "vue-router": "^3.0.1",
     "vue2-transitions": "^0.2.3",
     "whatwg-fetch": "^2.0.3",
+    "yu.css.ui": "^2.0.3",
     "yu.event": "^1.0.1",
     "yu.validation": "^1.0.1"
   },
