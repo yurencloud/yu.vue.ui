@@ -1,33 +1,33 @@
 <template>
   <div id="container" style="margin: 30px">
     <h2>YU.UI</h2>
-    <div class="title">表格</div>
-    <div class="sub-title">普通用法</div>
+    <div class="web-title">表格</div>
+    <div class="web-sub-title">普通用法</div>
     <yu-table :tbody="tbody1" :thead="thead1"/>
 
-    <div class="sub-title">条纹</div>
+    <div class="web-sub-title">条纹</div>
     <yu-table :tbody="tbody1" :thead="thead1" stripe/>
 
-    <div class="sub-title">条纹</div>
+    <div class="web-sub-title">条纹</div>
     <yu-table :tbody="tbody1" :thead="thead1" celled/>
 
-    <div class="sub-title">不同状态</div>
+    <div class="web-sub-title">不同状态</div>
     <yu-table :tbody="tbody1" :thead="thead1" :status="status"/>
 
-    <div class="sub-title">定义每列宽</div>
+    <div class="web-sub-title">定义每列宽</div>
     <yu-table :tbody="tbody1" :columnWidth="columnWidth"  />
 
 
-    <div class="sub-title">固定表头</div>
+    <div class="web-sub-title">固定表头</div>
     <yu-fixed-table :thead="thead2" :tbody="tbody2" :columnWidth="columnWidth" fixedHead width="900px" celled/>
 
-    <div class="sub-title">可点击</div>
+    <div class="web-sub-title">可点击</div>
     <yu-table :tbody="tbody1" :thead="thead1" :clickable="clickable" width="100%"/>
 
-    <div class="sub-title">添加操作项</div>
+    <div class="web-sub-title">添加操作项</div>
     <yu-table :tbody="tbody3" :thead="thead3" :clickable="clickable2" width="100%"/>
 
-    <div class="sub-title">自定义插入组件</div>
+    <div class="web-sub-title">自定义插入组件</div>
     <yu-table celled width="100%">
       <tbody slot="tbody">
         <tr>
@@ -45,13 +45,13 @@
       </tbody>
     </yu-table>
 
-    <div class="sub-title">自定义底部</div>
+    <div class="web-sub-title">自定义底部</div>
     <yu-table :tbody="tbody1" :thead="thead1" :tfoot="tfoot1" width="100%"/>
 
-    <div class="sub-title">固定底部</div>
+    <div class="web-sub-title">固定底部</div>
     <yu-fixed-table :tfoot="tfoot1" :tbody="tbody2" :columnWidth="columnWidth" fixedHead width="900px" celled/>
 
-    <div class="sub-title">排序</div>
+    <div class="web-sub-title">排序</div>
     <yu-table :tbody="tbody1">
       <thead slot="thead">
         <tr>
@@ -62,23 +62,23 @@
       </thead>
     </yu-table>
 
-    <div class="sub-title">调整属性显示顺序</div>
+    <div class="web-sub-title">调整属性显示顺序</div>
     <yu-table :tbody="tbody1" :thead="thead1" :order="order"/>
 
-    <!--<div class="sub-title">规定表格单元宽度</div>-->
+    <!--<div class="web-sub-title">规定表格单元宽度</div>-->
     <!--<yu-table :widths="width1"  :data="tabItem"/>-->
 
-    <!--<div class="sub-title" style="margin-top: 100px">带有斑马纹</div>-->
+    <!--<div class="web-sub-title" style="margin-top: 100px">带有斑马纹</div>-->
     <!--<yu-table :data="tabItem" stripe/>-->
-    <!--<div class="sub-title" style="margin-top: 100px">带边框的表格</div>-->
+    <!--<div class="web-sub-title" style="margin-top: 100px">带边框的表格</div>-->
     <!--<yu-table :data="tabItem" border />-->
-    <!--<div class="sub-title"  style="margin-top: 100px">带状态的表格</div>-->
+    <!--<div class="web-sub-title"  style="margin-top: 100px">带状态的表格</div>-->
     <!--<yu-table  :data="tabItem" border :widths="width1" status/>-->
-    <!--<div class="sub-title"  style="margin-top: 100px">固定表头</div>-->
+    <!--<div class="web-sub-title"  style="margin-top: 100px">固定表头</div>-->
     <!--<yu-table :data="tabItem" :widths="width1"  border height="300px"/>-->
-    <!--<div class="sub-title"  style="margin-top: 100px;">固定列</div>-->
+    <!--<div class="web-sub-title"  style="margin-top: 100px;">固定列</div>-->
     <!--<yu-table  :data="Item" border width="800px"/>-->
-    <!--<div class="sub-title" style="margin-top: 100px;">单选</div>-->
+    <!--<div class="web-sub-title" style="margin-top: 100px;">单选</div>-->
     <!--<yu-table  :data="Items"/>-->
 
     <div style="margin-bottom: 400px"></div>

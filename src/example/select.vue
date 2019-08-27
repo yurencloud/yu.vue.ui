@@ -1,8 +1,8 @@
 <template>
   <div id="container" style="margin: 30px">
     <h2>YU.UI</h2>
-    <div class="title">下拉选择</div>
-    <div class="sub-title">基础用法</div>
+    <div class="web-title">下拉选择</div>
+    <div class="web-sub-title">基础用法</div>
     <yu-select placeholder="请选择动物" v-model="value1">
       <yu-option label="猫" value="1"/>
       <yu-option label="狗" value="2"/>
@@ -13,7 +13,7 @@
       <yu-option label="狗" value="2"/>
     </yu-select>
 
-    <div class="sub-title">尺寸大小</div>
+    <div class="web-sub-title">尺寸大小</div>
     <yu-select placeholder="请选择动物" v-model="value1" size="medium">
       <yu-option label="猫" value="1"/>
       <yu-option label="狗" value="2"/>
@@ -27,27 +27,27 @@
       <yu-option label="狗" value="2"/>
     </yu-select>
 
-    <div class="sub-title">多选项滚动</div>
+    <div class="web-sub-title">多选项滚动</div>
     <yu-select placeholder="请选择动物" overflow v-model="value2">
       <yu-option label="猫" value="1"/>
       <yu-option label="狗" value="2"/>
       <yu-option label="猪" value="3"/>
     </yu-select>
 
-    <div class="sub-title">有禁用选项</div>
+    <div class="web-sub-title">有禁用选项</div>
     <yu-select placeholder="请选择动物" overflow v-model="value3">
       <yu-option label="猫" value="1"/>
       <yu-option label="狗" value="2" disabled/>
       <yu-option label="猪" value="3"/>
     </yu-select>
 
-    <div class="sub-title">禁用状态</div>
+    <div class="web-sub-title">禁用状态</div>
     <yu-select placeholder="请选择动物" overflow disabled v-model="value4">
       <yu-option label="猫" value="1"/>
       <yu-option label="狗" value="2" disabled/>
     </yu-select>
 
-    <div class="sub-title">多选</div>
+    <div class="web-sub-title">多选</div>
     <yu-select placeholder="请选择动物" overflow multi v-model="value5">
       <yu-option label="猫" value="1"/>
       <yu-option label="狗" value="2" disabled/>
@@ -57,7 +57,7 @@
     </yu-select>
 
 
-    <div class="sub-title">显示多选选项</div>
+    <div class="web-sub-title">显示多选选项</div>
     <yu-select placeholder="请选择动物" overflow multi showSelects v-model="value6">
       <yu-option label="猫" value="1"/>
       <yu-option label="狗" value="2" disabled/>
@@ -67,7 +67,7 @@
     </yu-select>
 
 
-    <div class="sub-title">自定义选项</div>
+    <div class="web-sub-title">自定义选项</div>
     <div style="margin-bottom: 20px">通过自定义选项，可以对选项进行分组，显示分组标题，显示分割线等</div>
     <yu-select placeholder="请选择动物" overflow v-model="value7">
       <yu-option disabled>
@@ -107,7 +107,7 @@
       </yu-option>
     </yu-select>
 
-    <div class="sub-title">v-model</div>
+    <div class="web-sub-title">v-model</div>
     <div>{{value1}}</div>
     <div>{{value2}}</div>
     <div>{{value3}}</div>

@@ -1,28 +1,28 @@
 <template>
   <div id="container" style="margin: 30px">
     <h2>YU.UI</h2>
-    <div class="title">输入框</div>
-    <div class="sub-title">基础用法</div>
+    <div class="web-title">输入框</div>
+    <div class="web-sub-title">基础用法</div>
     <yu-input placeholder="请输入用户名" @change="inputChange" v-model="value1"/>
     <yu-input placeholder="请输入密码" type="number" @change="inputChange" v-model="value1"/>
     <input type="number">
 
-    <div class="sub-title">禁用状态</div>
+    <div class="web-sub-title">禁用状态</div>
     <yu-input placeholder="请输入用户名" disabled v-model="value2"/>
 
-    <div class="sub-title">可清空</div>
+    <div class="web-sub-title">可清空</div>
     <yu-input placeholder="请输入用户名" clearable v-model="value3"/>
 
-    <div class="sub-title">图标</div>
+    <div class="web-sub-title">图标</div>
     <yu-input placeholder="请输入用户名" prefix="icon-user" v-model="value4"/>
     <yu-input placeholder="请输入用户名" prefix="icon-user" size="small" v-model="value4"/>
     <yu-input placeholder="请输入用户名" suffix="icon-user" v-model="value4"/>
     <yu-input placeholder="请输入用户名" suffix="icon-user" size="small" v-model="value4"/>
 
-    <div class="sub-title">长文本输入</div>
+    <div class="web-sub-title">长文本输入</div>
     <yu-input placeholder="请输入用户名" type="textarea" v-model="value5"/>
 
-    <div class="sub-title">组合</div>
+    <div class="web-sub-title">组合</div>
     <yu-input placeholder="请输入用户名" v-model="value6">
       <yu-button class="append" slot="append">.com</yu-button>
     </yu-input>
@@ -54,7 +54,7 @@
       </yu-select>
     </yu-input>
 
-    <div class="sub-title">不同尺寸</div>
+    <div class="web-sub-title">不同尺寸</div>
     <yu-input placeholder="请输入用户名" @change="inputChange" prefix="icon-user" v-model="value7"/>
     <yu-input placeholder="请输入用户名" @change="inputChange" size="medium" prefix="icon-user" v-model="value7"/>
     <yu-input placeholder="请输入用户名" @change="inputChange" size="small" prefix="icon-user" v-model="value7"/>
@@ -64,10 +64,10 @@
     <yu-input placeholder="请输入用户名" @change="inputChange" size="small" suffix="icon-user" v-model="value7"/>
     <yu-input placeholder="请输入用户名" @change="inputChange" size="mini" suffix="icon-angle-down" v-model="value7"/>
 
-    <div class="sub-title">控制长度</div>
+    <div class="web-sub-title">控制长度</div>
     <yu-input placeholder="请输入用户名" @change="inputChange" width="50%" v-model="value8"/>
 
-    <div class="sub-title">输入提示(远程搜索)</div>
+    <div class="web-sub-title">输入提示(远程搜索)</div>
     <yu-input
       overflow
       remote
@@ -78,7 +78,7 @@
     >
     </yu-input>
 
-    <div class="sub-title">输入提示(本地搜索)</div>
+    <div class="web-sub-title">输入提示(本地搜索)</div>
     <yu-input
       overflow
       @fetch="handleFetch"
@@ -88,7 +88,7 @@
     >
     </yu-input>
 
-    <div class="sub-title">v-model</div>
+    <div class="web-sub-title">v-model</div>
     <div>{{value1}}</div>
     <div>{{value2}}</div>
     <div>{{value3}}</div>

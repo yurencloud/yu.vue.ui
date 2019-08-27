@@ -1,29 +1,29 @@
 <template>
   <div id="container" style="margin: 30px">
     <h2>YU.UI</h2>
-    <div class="title">单选框</div>
+    <div class="web-title">单选框</div>
 
-    <div class="sub-title">基础选项</div>
+    <div class="web-sub-title">基础选项</div>
     <yu-radios v-model="value1">
       <yu-radio checked label="1">苹果</yu-radio>
       <yu-radio label="2">香蕉</yu-radio>
       <yu-radio label="3">桃子</yu-radio>
     </yu-radios>
-    <div class="sub-title">禁用选项</div>
+    <div class="web-sub-title">禁用选项</div>
     <yu-radio checked disabled v-model="value2">桔子</yu-radio>
     <yu-radio disabled v-model="value2">桔子</yu-radio>
-    <div class="sub-title">垂直方向</div>
+    <div class="web-sub-title">垂直方向</div>
     <yu-radios vertical v-model="value3">
       <yu-radio checked label="1">苹果</yu-radio>
       <yu-radio label="2">香蕉</yu-radio>
       <yu-radio label="3">桃子</yu-radio>
     </yu-radios>
 
-    <div class="sub-title">可以单独使用，返回true/false</div>
+    <div class="web-sub-title">可以单独使用，返回true/false</div>
     <yu-radio v-model="value4">手机</yu-radio>
     <yu-radio v-model="value5">电脑</yu-radio>
 
-    <div class="sub-title">v-model</div>
+    <div class="web-sub-title">v-model</div>
     <div>{{value1}}</div>
     <div>{{value2}}</div>
     <div>{{value3}}</div>

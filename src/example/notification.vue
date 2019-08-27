@@ -2,7 +2,7 @@
   <div id="container" style="margin: 30px">
     <h2>YU.UI</h2>
 
-    <div class="sub-title">
+    <div class="web-sub-title">
       普通用法
     </div>
     <yu-button @click="showNotify">点击</yu-button>

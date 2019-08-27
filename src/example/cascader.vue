@@ -1,32 +1,32 @@
 <template>
   <div id="container" style="margin: 30px">
     <h2>YU.UI</h2>
-    <div class="title">级联选择</div>
-    <div class="sub-title">普通用法</div>
+    <div class="web-title">级联选择</div>
+    <div class="web-sub-title">普通用法</div>
     <yu-cascader :cascader="cascader" v-model="value1"/>
 
-    <div class="sub-title">hover触发</div>
+    <div class="web-sub-title">hover触发</div>
     <yu-cascader :cascader="cascader" hover v-model="value2"/>
 
-    <div class="sub-title">有禁用选项</div>
+    <div class="web-sub-title">有禁用选项</div>
     <yu-cascader :cascader="cascader" v-model="value3"/>
 
-    <div class="sub-title">结果仅显示最后一项</div>
+    <div class="web-sub-title">结果仅显示最后一项</div>
     <yu-cascader :cascader="cascader" short v-model="value4"/>
 
-    <div class="sub-title">默认值</div>
+    <div class="web-sub-title">默认值</div>
     <yu-cascader :cascader="cascader" :defaultValue="defaultValue" v-model="value5"/>
 
-    <div class="sub-title">选择即改变</div>
+    <div class="web-sub-title">选择即改变</div>
     <yu-cascader :cascader="cascader" changeOnSelect v-model="value6"/>
 
-    <div class="sub-title">动态加载</div>
+    <div class="web-sub-title">动态加载</div>
     <!--<yu-cascader ref="cascader" :cascader="fetchCascader" @fetch="cascaderFetch" remote v-model="value7"/>-->
 
-    <div class="sub-title">动态加载默认值（要自定义default-value-text）</div>
+    <div class="web-sub-title">动态加载默认值（要自定义default-value-text）</div>
     <yu-cascader ref="cascader" :cascader="fetchCascader" @fetch="cascaderFetch" remote v-model="value8" default-value-text="前端/js/js-1"/>
 
-    <div class="sub-title">v-model(在初始化后，只能单向输出)</div>
+    <div class="web-sub-title">v-model(在初始化后，只能单向输出)</div>
     <div>{{value1}}</div>
     <div>{{value2}}</div>
     <div>{{value3}}</div>

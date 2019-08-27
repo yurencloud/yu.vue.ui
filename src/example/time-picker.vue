@@ -1,20 +1,20 @@
 <template>
   <div id="container" style="margin: 30px">
     <h2>YU.UI</h2>
-    <div class="title">时间选择器</div>
-    <div class="sub-title">普通用法</div>
+    <div class="web-title">时间选择器</div>
+    <div class="web-sub-title">普通用法</div>
     <yu-time-picker v-model="value1"/>
 
-    <div class="sub-title">设置时间段和步长</div>
+    <div class="web-sub-title">设置时间段和步长</div>
     <yu-time-picker :optionParam="time" v-model="value2"/>
 
-    <div class="sub-title">设置时间最大值和最小值</div>
+    <div class="web-sub-title">设置时间最大值和最小值</div>
     <yu-time-picker :optionParam="time2" v-model="value3"/>
 
-    <div class="sub-title">滚动时间列表选择</div>
+    <div class="web-sub-title">滚动时间列表选择</div>
     <yu-time-picker type="scroll" :selectParam="selectParam" v-model="value4"/>
 
-    <div class="sub-title">v-model</div>
+    <div class="web-sub-title">v-model</div>
     <div>{{value1}}</div>
     <div>{{value2}}</div>
     <div>{{value3}}</div>

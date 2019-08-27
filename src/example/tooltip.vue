@@ -7,7 +7,7 @@
     <yu-tooltip content="提示消息内容" show-arrow >
       <yu-button size="mini" >上边</yu-button>
     </yu-tooltip>
-    <div class="sub-title" >方位变化(dark)</div>
+    <div class="web-sub-title" >方位变化(dark)</div>
 
     <yu-tooltip content="提示消息内容" show-arrow  placement="top">
       <yu-button>上左</yu-button>
@@ -28,7 +28,7 @@
       <yu-button>右侧</yu-button>
     </yu-tooltip>
 
-    <div class="sub-title">方位变化(light)</div>
+    <div class="web-sub-title">方位变化(light)</div>
     <yu-tooltip content="提示消息内容" show-arrow effect="light" placement="top">
       <yu-button >上左</yu-button>
     </yu-tooltip>

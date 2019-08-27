@@ -1,36 +1,36 @@
 <template>
   <div id="container" style="margin: 30px">
     <h2>YU.UI</h2>
-    <div class="title">slider滑块</div>
-    <div class="sub-title">普通用法</div>
+    <div class="web-title">slider滑块</div>
+    <div class="web-sub-title">普通用法</div>
     <yu-slider v-model="value1"/>
 
-    <div class="sub-title">显示计量单位，元，%等</div>
+    <div class="web-sub-title">显示计量单位，元，%等</div>
     <yu-slider value-unit="元" v-model="value2"/>
 
-    <div class="sub-title">定义初始值</div>
+    <div class="web-sub-title">定义初始值</div>
     <yu-slider :defaultValue=50  v-model="value3"/>
 
-    <div class="sub-title">禁用</div>
+    <div class="web-sub-title">禁用</div>
     <yu-slider :defaultValue=50 disabled v-model="value4"/>
 
-    <div class="sub-title">步长</div>
+    <div class="web-sub-title">步长</div>
     <yu-slider :defaultValue=50 :step=10 v-model="value5"/>
 
-    <div class="sub-title">步长显示锚点</div>
+    <div class="web-sub-title">步长显示锚点</div>
     <yu-slider :defaultValue=50 :step=10 point v-model="value6"/>
 
-    <div class="sub-title">修改总量(可为任意整数)</div>
+    <div class="web-sub-title">修改总量(可为任意整数)</div>
     <yu-slider :defaultValue=500  :total=1000 v-model="value7"/>
 
-    <div class="sub-title">修改长度</div>
+    <div class="web-sub-title">修改长度</div>
     <yu-slider :width="800" v-model="value8"/>
     <yu-slider :width="80" v-model="value9"/>
 
-    <div class="sub-title">最大值最小值</div>
+    <div class="web-sub-title">最大值最小值</div>
     <yu-slider :min=50 :max=80 :default-value="50" v-model="value10"/>
 
-    <div class="sub-title">v-model</div>
+    <div class="web-sub-title">v-model</div>
     <div>{{value1}}</div>
     <div>{{value2}}</div>
     <div>{{value3}}</div>

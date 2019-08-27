@@ -2,23 +2,14 @@
   <div class="yu-alert"
        :class="[type,{center:center},{description:description}]"
        v-show="visible">
-       <!-- icon -->
-    <i class="icon iconfont"
-       v-if='showIcon'
-       :class="[icons[type],]"></i>
-    <div class="alert-text">
-      <!-- 标题 -->
-      <div class="alert-title">
-       {{title}}
-      </div>
-      <!-- 辅助文本 -->
-      <div class="alert-auxiliary">{{description}}</div>
-    </div>
-    <!-- 关闭图标或文字 -->
-    <div class="alert-close" @click="close">
-      {{closeText}}
-      <i class="iconfont icon-close" v-if="!closeText"></i>
-    </div>
+      <slot></slot>
+      <i class="iconfont" v-if="showIcon && !title" :class="[icons[type]]"></i>
+      <p class="title" v-if="title">
+        <i class="iconfont" v-if="showIcon" :class="[icons[type]]"></i>
+        {{title}}
+      </p>
+      <p class="description" v-if="description">{{description}}</p>
+      <i v-if="closeable" class="iconfont icon-close"  @click="close"></i>
   </div>
 </template>
 
@@ -45,7 +36,6 @@ export default {
     showIcon: Boolean,
     center: Boolean,
     description: String,
-    closeText: String,
     closeable: {
       type: Boolean,
       default: true,

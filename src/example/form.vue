@@ -1,8 +1,8 @@
 <template>
   <div id="container" style="margin: 30px">
     <h2>YU.UI</h2>
-    <div class="title">表单</div>
-    <div class="sub-title">典型表单</div>
+    <div class="web-title">表单</div>
+    <div class="web-sub-title">典型表单</div>
     <yu-form>
       <yu-field label="活动名称">
         <yu-input name="activity" v-model="form1.activity"/>
@@ -43,7 +43,7 @@
       </yu-field>
     </yu-form>
 
-    <div class="sub-title">行内表单</div>
+    <div class="web-sub-title">行内表单</div>
     <yu-form inline>
       <yu-field label="活动名称">
         <yu-input/>
@@ -64,7 +64,7 @@
     </yu-form>
 
 
-    <div class="sub-title">label对齐方式</div>
+    <div class="web-sub-title">label对齐方式</div>
     <yu-form>
       <yu-field label="顶对齐" align="top">
         <yu-input/>
@@ -77,7 +77,7 @@
       </yu-field>
     </yu-form>
 
-    <div class="sub-title">无label</div>
+    <div class="web-sub-title">无label</div>
     <yu-form>
       <yu-field>
         <yu-input/>
@@ -87,7 +87,7 @@
       </yu-field>
     </yu-form>
 
-    <div class="sub-title">表单验证</div>
+    <div class="web-sub-title">表单验证</div>
     <yu-form :rules="rules" width="600px" v-model="form2">
       <yu-field label="活动名称">
         <yu-input name="activity1" v-model="form2.activity1"/>
@@ -166,7 +166,7 @@
 
     </yu-form>
 
-    <div class="sub-title">表单提交</div>
+    <div class="web-sub-title">表单提交</div>
     <yu-form :rules="rules" action="/api/fruits" width="600px" method="POST" @success="success">
       <yu-field label="水果id">
         <yu-input name="id"/>
@@ -181,7 +181,7 @@
 
     </yu-form>
 
-    <div class="sub-title">自定义验证器</div>
+    <div class="web-sub-title">自定义验证器</div>
     <yu-form :rules="rules2" width="600px" method="POST" v-model="form3" ref="form3">
       <yu-field label="水果id" prop="id">
         <yu-input name="id" v-model="form3.id"/>

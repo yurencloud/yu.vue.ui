@@ -2,24 +2,24 @@
   <div id="container" style="margin: 30px">
     <h2>YU.UI</h2>
 
-    <div class="title">分页</div>
+    <div class="web-title">分页</div>
 
-    <div class="sub-title">简单用法</div>
+    <div class="web-sub-title">简单用法</div>
     <yu-pagination @change="showPage" :total="50"/>
 
-    <div class="sub-title">多页效果</div>
+    <div class="web-sub-title">多页效果</div>
     <yu-pagination @change="showPage" :total="100"/>
 
-    <div class="sub-title">带背景色</div>
+    <div class="web-sub-title">带背景色</div>
     <yu-pagination @change="showPage" :total="100" background/>
 
-    <div class="sub-title">显示总页数</div>
+    <div class="web-sub-title">显示总页数</div>
     <yu-pagination @change="showPage" :total="100" background show-total/>
 
-    <div class="sub-title">可调整每页条数</div>
+    <div class="web-sub-title">可调整每页条数</div>
     <yu-pagination @change="showPage" :total="100" background change-size :show-size="size"/>
 
-    <div class="sub-title">直接前往</div>
+    <div class="web-sub-title">直接前往</div>
     <yu-pagination @change="showPage" :total="100" background go-to/>
 
     <div style="margin-bottom: 400px"></div>

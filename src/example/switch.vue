@@ -1,34 +1,34 @@
 <template>
   <div id="container" style="margin: 30px">
     <h2>YU.UI</h2>
-    <div class="title">Switch开关</div>
-    <div class="sub-title">普通用法</div>
+    <div class="web-title">Switch开关</div>
+    <div class="web-sub-title">普通用法</div>
     <yu-switch on v-model="value1"/>
     <yu-switch v-model="value1"/>
 
-    <div class="sub-title">其他颜色(开有多种颜色，关只有一种颜色)</div>
+    <div class="web-sub-title">其他颜色(开有多种颜色，关只有一种颜色)</div>
     <yu-switch on type="danger" v-model="value2"/>
     <yu-switch on type="success" v-model="value2"/>
     <yu-switch on type="info" v-model="value2"/>
     <yu-switch on type="warning" v-model="value2"/>
 
-    <div class="sub-title">标签文字</div>
+    <div class="web-sub-title">标签文字</div>
     <yu-switch on label="关灯" v-model="value3"/>
     <yu-switch on after label="关灯" v-model="value3"/>
 
-    <div class="sub-title">标签文字</div>
+    <div class="web-sub-title">标签文字</div>
     <yu-switch disabled label="关灯" v-model="value4" />
     <yu-switch on after label="关灯" disabled v-model="value4" />
 
-    <div class="sub-title">激活和非激活时的文字</div>
+    <div class="web-sub-title">激活和非激活时的文字</div>
     <yu-switch on activeLabel="开灯" inactiveLabel="关灯" v-model="value5"/>
     <yu-switch inactiveLabel="关灯" activeLabel="开灯" v-model="value6" />
 
-    <div class="sub-title">激活和非激活时的值</div>
+    <div class="web-sub-title">激活和非激活时的值</div>
     <yu-switch on activeLabel="开灯" inactiveLabel="关灯" v-model="value7" inactive-value="off" active-value="on"/>
     <yu-switch inactiveLabel="关灯" activeLabel="开灯" v-model="value8"  inactive-value="off" active-value="on"/>
 
-    <div class="sub-title">v-model</div>
+    <div class="web-sub-title">v-model</div>
     <div>{{value1}}</div>
     <div>{{value2}}</div>
     <div>{{value3}}</div>

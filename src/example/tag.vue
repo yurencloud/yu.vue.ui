@@ -1,30 +1,30 @@
 <template>
   <div id="container" style="margin: 30px">
     <h2>YU.UI</h2>
-    <div class="title">tag 标签</div>
-    <div class="sub-title">普通用法</div>
+    <div class="web-title">tag 标签</div>
+    <div class="web-sub-title">普通用法</div>
     <yu-tag>标签</yu-tag>
 
-    <div class="sub-title">可关闭</div>
+    <div class="web-sub-title">可关闭</div>
     <yu-tag closable>标签</yu-tag>
 
-    <div class="sub-title">不同尺寸</div>
+    <div class="web-sub-title">不同尺寸</div>
     <yu-tag closable size="normal">标签</yu-tag>
     <yu-tag closable size="medium">标签</yu-tag>
     <yu-tag closable size="small">标签</yu-tag>
     <yu-tag closable size="mini">标签</yu-tag>
 
-    <div class="sub-title">去除边框</div>
+    <div class="web-sub-title">去除边框</div>
     <yu-tag closable clearBorder>标签</yu-tag>
 
-    <div class="sub-title">不同颜色</div>
+    <div class="web-sub-title">不同颜色</div>
     <yu-tag closable type="primary">标签</yu-tag>
     <yu-tag closable type="info">标签</yu-tag>
     <yu-tag closable type="success">标签</yu-tag>
     <yu-tag closable type="warning">标签</yu-tag>
     <yu-tag closable type="danger">标签</yu-tag>
 
-    <div class="sub-title">去除动画</div>
+    <div class="web-sub-title">去除动画</div>
     <yu-tag disableTransitions>标签</yu-tag>
     <yu-tag closable clearBorder type="danger" @close="handleClose" colo="pink">标签</yu-tag>
 

@@ -13,7 +13,7 @@
     </yu-tabs>
 
 
-    <div class="sub-title">卡片化</div>
+    <div class="web-sub-title">卡片化</div>
     <yu-tabs type="border-card">
       <yu-tabs-nav slot="nav">用户管理</yu-tabs-nav>
       <yu-tabs-nav slot="nav">配置管理</yu-tabs-nav>
@@ -26,7 +26,7 @@
     </yu-tabs>
 
 
-    <div class="sub-title">自定义位置</div>
+    <div class="web-sub-title">自定义位置</div>
     <yu-tabs width="100%" tab-position="top">
       <yu-tabs-nav slot="nav">用户管理用户管理用户管理</yu-tabs-nav>
       <yu-tabs-nav slot="nav">配置管理</yu-tabs-nav>

@@ -1,7 +1,7 @@
 <template>
   <div id="container" style="margin: 30px">
     <h2>YU.UI</h2>
-    <div class="sub-title" style="margin-top: 100px">标记</div>
+    <div class="web-sub-title" style="margin-top: 100px">标记</div>
     <yu-badge value="99">
       <yu-button type="small">评价</yu-button>
     </yu-badge>

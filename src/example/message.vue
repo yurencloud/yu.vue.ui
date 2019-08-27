@@ -1,19 +1,19 @@
 <template>
   <div id="container" style="margin: 30px">
     <h2>YU.UI</h2>
-    <div class="sub-title">普通用法</div>
+    <div class="web-sub-title">普通用法</div>
     <yu-button @click="click1">点击</yu-button>
 
-    <div class="sub-title">自定义图标</div>
+    <div class="web-sub-title">自定义图标</div>
     <yu-button @click="click2">点击</yu-button>
 
-    <div class="sub-title">自定义HTML片段</div>
+    <div class="web-sub-title">自定义HTML片段</div>
     <yu-button @click="click3">点击</yu-button>
 
-    <div class="sub-title">居中</div>
+    <div class="web-sub-title">居中</div>
     <yu-button @click="click4">点击</yu-button>
 
-    <div class="sub-title">不同类型消息</div>
+    <div class="web-sub-title">不同类型消息</div>
     <yu-button @click="click5">警告</yu-button>
     <yu-button @click="click7">成功</yu-button>
     <yu-button @click="click8">错误</yu-button>
@@ -21,14 +21,14 @@
     <yu-button @click="click10">信息</yu-button>
 
 
-    <div class="sub-title">显示关闭图标</div>
+    <div class="web-sub-title">显示关闭图标</div>
     <yu-button @click="click6">点击</yu-button>
 
 
-    <div class="sub-title">关闭指定序号的消息</div>
+    <div class="web-sub-title">关闭指定序号的消息</div>
     <yu-button @click="click11">点击</yu-button>
 
-    <div class="sub-title">关闭所有消息</div>
+    <div class="web-sub-title">关闭所有消息</div>
     <yu-button @click="click12">点击</yu-button>
 
 
